@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gradientes no CSS</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: linear-gradient(90deg, #000000, #7b18f5);
+      color: #ff0000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: transparent;
+    }
+
+    h1 {
+      color: #ff0000;
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+
+    .btn {
+      padding: 15px 30px;
+      margin: 10px;
+      font-size: 1rem;
+      color: white;
+      background: linear-gradient(45deg, #ff416c, #ff4b2b);
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.4s ease;
+    }
+
+    .btn:hover {
+      background: linear-gradient(135deg, #ff4b2b, #ff416c);
+      transform: scale(1.1);
+      box-shadow: 0 8px 16px rgba(240, 10, 10, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button class="btn">Botão 1</button>
+    <button class="btn">Botão 2</button>
+    <button class="btn">Botão 3</button>
+  </div>
+</body>
+</html>
